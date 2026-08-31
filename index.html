@@ -14,7 +14,7 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 16px;
-            border: 5px solid yellow;
+            border: 5px solid rgb(255, 255, 255);
         }
 
         main {
@@ -23,14 +23,18 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 16px;
-            display: flex;
+            
             text-align: center;
-
         }
 
+  article{
+    display: flex;
+}
+
+
         img {
-            width: 160px;
-            height: 160px;
+            width: 250px;
+            height: 250px;
         }
     </style>
 </head>
@@ -43,7 +47,8 @@
     </header>
 
     <main>
-        <img src="imagem1.jpeg" alt="imagem inicial">
+        <article>
+        <img src="imagem1.png" alt="imagem inicial">
         <div>
             <h2>por:Raul Cordeiro.</h2>
             <p>Cristiano Ronaldo dos Santos Aveiro nasceu em 5 de fevereiro de 1985.</p>
@@ -54,9 +59,72 @@
             <p>Real Madrid (2009–2018): Tornou-se o maior artilheiro da história do clube merengue, faturando quatro edições da Liga dos Campeões e diversos títulos nacionais e individuais.</p>
             <p>Juventus (2018–2021) e Retorno ao United (2021–2022): Mteve alto rendimento goleador na Itália e retornou brevemente à Inglaterra antes de novos desafios.</p>
             <p>Obrigado!!!!!!</p>
+            <button>👍<span>0</span></button>
+                <button>👎<span>0</span></button>
+
+
         </div>
+        </article>
+        <article>
+        <img src="imagem1.png" alt="imagem inicial">
+        <div>
+            <h2>por:Raul Cordeiro.</h2>
+            <p>Cristiano Ronaldo dos Santos Aveiro nasceu em 5 de fevereiro de 1985.</p>
+            <p>>No Funchal, na Ilha da Madeira, Portugal. Desde pequeno, era apaixonado por futebol e demonstrava um talento enorme.</p>
+            <p>Ele começou no Andorinha, passou pelo Nacional da Madeira e, ainda adolescente, foi para o Sporting CP, em Lisboa.</p>
+            <p>Considerado um dos maiores jogadores de futebol de todos os tempos, ele conquistou cinco prêmios de Melhor do Mundo/Bola de Ouro e acumula passagens marcantes por Sporting, Manchester United, Real Madrid, Juventus e Al-Nassr.</p>
+            <p>Manchester United (2003–2009): Destacou-se sob a batuta de Sir Alex Ferguson, conquistando a sua primeira Liga dos Campeões e a primeira Bola de Ouro</p>
+            <p>Real Madrid (2009–2018): Tornou-se o maior artilheiro da história do clube merengue, faturando quatro edições da Liga dos Campeões e diversos títulos nacionais e individuais.</p>
+            <p>Juventus (2018–2021) e Retorno ao United (2021–2022): Mteve alto rendimento goleador na Itália e retornou brevemente à Inglaterra antes de novos desafios.</p>
+            <p>Obrigado!!!!!!</p>
+            <button>👍<span>0</span></button>
+                <button>👎<span>0</span></button>
+
+
+        </div>
+        </article>
+
+        <article>
+        <img src="imagem1.png" alt="imagem inicial">
+        <div>
+            <h2>por:Raul Cordeiro.</h2>
+            <p>Cristiano Ronaldo dos Santos Aveiro nasceu em 5 de fevereiro de 1985.</p>
+            <p>>No Funchal, na Ilha da Madeira, Portugal. Desde pequeno, era apaixonado por futebol e demonstrava um talento enorme.</p>
+            <p>Ele começou no Andorinha, passou pelo Nacional da Madeira e, ainda adolescente, foi para o Sporting CP, em Lisboa.</p>
+            <p>Considerado um dos maiores jogadores de futebol de todos os tempos, ele conquistou cinco prêmios de Melhor do Mundo/Bola de Ouro e acumula passagens marcantes por Sporting, Manchester United, Real Madrid, Juventus e Al-Nassr.</p>
+            <p>Manchester United (2003–2009): Destacou-se sob a batuta de Sir Alex Ferguson, conquistando a sua primeira Liga dos Campeões e a primeira Bola de Ouro</p>
+            <p>Real Madrid (2009–2018): Tornou-se o maior artilheiro da história do clube merengue, faturando quatro edições da Liga dos Campeões e diversos títulos nacionais e individuais.</p>
+            <p>Juventus (2018–2021) e Retorno ao United (2021–2022): Mteve alto rendimento goleador na Itália e retornou brevemente à Inglaterra antes de novos desafios.</p>
+            <p>Obrigado!!!!!!</p>
+            <button>👍<span>0</span></button>
+                <button>👎<span>0</span></button>
+
+
+        </div>
+        </article>
+
+
     </main>
 
 </body>
+<script>
+    const botoes = document.querySelectorAll("button");
 
+    botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true;
+            } else {
+                texto.textContent--;
+                curtiu = false;
+            }
+
+        }
+    })
+</script>
 </html>
