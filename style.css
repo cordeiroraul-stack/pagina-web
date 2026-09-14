@@ -1,0 +1,29 @@
+ header {
+            background-color: rgb(0, 75, 187);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid rgb(255, 255, 255);
+        }
+
+        main {
+            background-color: rgb(0, 204, 255);
+            color: rgb(251, 255, 255);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px;
+            
+            text-align: center;
+        }
+
+  article{
+    display: flex;
+}
+
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
